@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Better Weather</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Domine:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <form>
+      <input type="search" name="search" id="search" placeholder="Search location">
+      <button type="submit">
+        <img class="search-img" src="./images/search.svg" height="20" width="20" alt="Search Button Icon">
+      </button>
+    </form>
+    <div class="switch-wrapper">
+      <p class="switch-btn celcius" data-system="metric">C&#176;</p>
+      <p class="switch-btn fahrenheit" data-system="imperial">F&#176;</p>
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="left">
+      <div class="description-wrapper">
+        <h1 class="description"></h1>
+        <img class="condition white" src="" height="40" width="40" alt=" ">
+      </div>
+      <h2 class="city"></h2>
+      <h3 class="country"></h3>
+      <h4 class="temperature"></h4>
+      <p class="day-and-temps">
+        <span class="day"></span>
+        <span class="min-temp"></span>
+        /
+        <span class="max-temp"></span>
+      </p>
+    </div>
+
+    <div class="right">
+      <div class="one">
+        <div class="feels-like">
+          <img class="white" src="images/feels-like.svg" height="30" width="30" alt="Feels like Icon">
+          <div class="info">
+            <p>Feels like</p>
+            <p class="temp"></p>
+          </div>
+        </div>
+        <div class="humidity">
+          <img class="white" src="images/humidity.svg" height="30" width="30" alt="Humidity Icon">
+          <div class="info">
+            <p>Humidity</p>
+            <p class="percentage"></p>
+          </div>
+        </div>
+        <div class="wind">
+          <img class="white" src="images/wind.svg" height="30" width="30" alt="Wind Speed Icon">
+          <div class="info">
+            <p>Wind Speed</p>
+            <p class="speed"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="two">
+        <div class="visibility">
+          <img class="white" src="images/visibility.svg" height="30" width="30" alt="Visibility Icon">
+          <div class="info">
+            <p>Visibility</p>
+            <p class="distance"></p>
+          </div>
+        </div>
+        <div class="sunrise">
+          <img class="white" src="images/sunrise.svg" height="30" width="30" alt="Sunrise Icon">
+          <div class="info">
+            <p>Sunrise</p>
+            <p class="time"></p>
+          </div>
+        </div>
+        <div class="sunset">
+          <img class="white" src="images/sunset.svg" height="30" width="30" alt="Sunset Icon">
+          <div class="info">
+            <p>Sunset</p>
+            <p class="time"></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer>
+    <p>Maaz on Github</p>
+    <a href="https://github.com/maazshaikh7/weather-app" target="_blank">
+      <img src="images/GitHub-Mark-Light-32px.png" height="15" width="15" alt="Github Icon">
+    </a>
+  </footer>
+  <div class="preload-overlay">
+    <span class="preloader"></span>
+  </div>
+</body>
+
+</html>
